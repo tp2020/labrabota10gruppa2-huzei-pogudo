@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C55693F2486AA77007C360C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55693E2486AA77007C360C /* AppDelegate.swift */; };
+		9C5569412486AA77007C360C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5569402486AA77007C360C /* SceneDelegate.swift */; };
+		9C5569432486AA77007C360C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5569422486AA77007C360C /* ViewController.swift */; };
+		9C5569462486AA77007C360C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5569442486AA77007C360C /* Main.storyboard */; };
+		9C5569492486AA77007C360C /* TPLab10.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C5569472486AA77007C360C /* TPLab10.xcdatamodeld */; };
+		9C55694B2486AA7E007C360C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C55694A2486AA7E007C360C /* Assets.xcassets */; };
+		9C55694E2486AA7E007C360C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C55694C2486AA7E007C360C /* LaunchScreen.storyboard */; };
+		9C5569592486AA7E007C360C /* TPLab10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5569582486AA7E007C360C /* TPLab10Tests.swift */; };
+		9C5569642486AA7E007C360C /* TPLab10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5569632486AA7E007C360C /* TPLab10UITests.swift */; };
+		9C5569732486AADA007C360C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5569722486AADA007C360C /* libsqlite3.tbd */; };
+		9C5569792486AB67007C360C /* DataBaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5569782486AB67007C360C /* DataBaseHandler.swift */; };
+		9C55697C2486AD03007C360C /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55697B2486AD03007C360C /* Hospital.swift */; };
+		9C55697E2486CFE8007C360C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55697D2486CFE8007C360C /* AccountViewController.swift */; };
+		9C5569822486D1D2007C360C /* PolyclinicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5569812486D1D2007C360C /* PolyclinicsViewController.swift */; };
+		9C5569842486D2D5007C360C /* PolyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5569832486D2D5007C360C /* PolyProfileViewController.swift */; };
+		9C5569862486D476007C360C /* DepartmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5569852486D476007C360C /* DepartmentsViewController.swift */; };
+		9C5569882486D53A007C360C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5569872486D53A007C360C /* RegistrationViewController.swift */; };
+		9C5569902486E8C7007C360C /* HospitalViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55698F2486E8C7007C360C /* HospitalViewController3.swift */; };
+		9C5585F72488C22F00CC535E /* TicketProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5585F62488C22F00CC535E /* TicketProfileViewController.swift */; };
+		9C55F871248931EA0049308F /* HospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55F870248931EA0049308F /* HospitalTests.swift */; };
+		9C55F873248936780049308F /* ReceptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55F872248936780049308F /* ReceptionTests.swift */; };
+		9C55F875248938280049308F /* PatientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55F874248938280049308F /* PatientTests.swift */; };
+		9C55F8772489397A0049308F /* DBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55F8762489397A0049308F /* DBTests.swift */; };
+		9C55F87924893C4F0049308F /* HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55F87824893C4F0049308F /* HelperTests.swift */; };
+		9C5782F52487DF8F00AADAE9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5782F42487DF8F00AADAE9 /* Helper.swift */; };
+		9C57A501248786BC008C362D /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57A500248786BC008C362D /* Patient.swift */; };
+		9C57A50724879DD8008C362D /* Hospital.db in Resources */ = {isa = PBXBuildFile; fileRef = 9C57A50624879DD8008C362D /* Hospital.db */; };
+		9C57A50B2487A5D9008C362D /* PolyclinicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57A5092487A5D9008C362D /* PolyclinicCell.swift */; };
+		9C57A50C2487A5D9008C362D /* PolyclinicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C57A50A2487A5D9008C362D /* PolyclinicCell.xib */; };
+		9C57A50E2487A7A1008C362D /* Polyclinic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57A50D2487A7A1008C362D /* Polyclinic.swift */; };
+		9C57A5112487B225008C362D /* HospitalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57A50F2487B225008C362D /* HospitalCell.swift */; };
+		9C57A5122487B225008C362D /* HospitalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C57A5102487B225008C362D /* HospitalCell.xib */; };
+		9C57A5142487C155008C362D /* EnrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57A5132487C155008C362D /* EnrollingViewController.swift */; };
+		9C57A5162487C1F3008C362D /* TicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57A5152487C1F3008C362D /* TicketsViewController.swift */; };
+		9C64CBF624882EE500D02B92 /* Reception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C64CBF524882EE500D02B92 /* Reception.swift */; };
+		9C64CBF924883F1B00D02B92 /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C64CBF724883F1B00D02B92 /* TicketCell.swift */; };
+		9C64CBFA24883F1B00D02B92 /* TicketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C64CBF824883F1B00D02B92 /* TicketCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C5569552486AA7E007C360C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C5569332486AA77007C360C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C55693A2486AA77007C360C;
+			remoteInfo = TPLab10;
+		};
+		9C5569602486AA7E007C360C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C5569332486AA77007C360C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C55693A2486AA77007C360C;
+			remoteInfo = TPLab10;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C55693B2486AA77007C360C /* TPLab10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPLab10.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C55693E2486AA77007C360C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C5569402486AA77007C360C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9C5569422486AA77007C360C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C5569452486AA77007C360C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C5569482486AA77007C360C /* TPLab10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TPLab10.xcdatamodel; sourceTree = "<group>"; };
+		9C55694A2486AA7E007C360C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C55694D2486AA7E007C360C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C55694F2486AA7E007C360C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C5569542486AA7E007C360C /* TPLab10Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPLab10Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C5569582486AA7E007C360C /* TPLab10Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPLab10Tests.swift; sourceTree = "<group>"; };
+		9C55695A2486AA7E007C360C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C55695F2486AA7E007C360C /* TPLab10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPLab10UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C5569632486AA7E007C360C /* TPLab10UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPLab10UITests.swift; sourceTree = "<group>"; };
+		9C5569652486AA7E007C360C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C5569722486AADA007C360C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9C5569782486AB67007C360C /* DataBaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHandler.swift; sourceTree = "<group>"; };
+		9C55697B2486AD03007C360C /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		9C55697D2486CFE8007C360C /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		9C5569812486D1D2007C360C /* PolyclinicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyclinicsViewController.swift; sourceTree = "<group>"; };
+		9C5569832486D2D5007C360C /* PolyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyProfileViewController.swift; sourceTree = "<group>"; };
+		9C5569852486D476007C360C /* DepartmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsViewController.swift; sourceTree = "<group>"; };
+		9C5569872486D53A007C360C /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		9C55698F2486E8C7007C360C /* HospitalViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalViewController3.swift; sourceTree = "<group>"; };
+		9C5585F62488C22F00CC535E /* TicketProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketProfileViewController.swift; sourceTree = "<group>"; };
+		9C55F870248931EA0049308F /* HospitalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalTests.swift; sourceTree = "<group>"; };
+		9C55F872248936780049308F /* ReceptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionTests.swift; sourceTree = "<group>"; };
+		9C55F874248938280049308F /* PatientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTests.swift; sourceTree = "<group>"; };
+		9C55F8762489397A0049308F /* DBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBTests.swift; sourceTree = "<group>"; };
+		9C55F87824893C4F0049308F /* HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperTests.swift; sourceTree = "<group>"; };
+		9C5782F42487DF8F00AADAE9 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		9C57A500248786BC008C362D /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		9C57A50624879DD8008C362D /* Hospital.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hospital.db; sourceTree = "<group>"; };
+		9C57A50824879DE1008C362D /* Hospital.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hospital.db; sourceTree = SOURCE_ROOT; };
+		9C57A5092487A5D9008C362D /* PolyclinicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyclinicCell.swift; sourceTree = "<group>"; };
+		9C57A50A2487A5D9008C362D /* PolyclinicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolyclinicCell.xib; sourceTree = "<group>"; };
+		9C57A50D2487A7A1008C362D /* Polyclinic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polyclinic.swift; sourceTree = "<group>"; };
+		9C57A50F2487B225008C362D /* HospitalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalCell.swift; sourceTree = "<group>"; };
+		9C57A5102487B225008C362D /* HospitalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HospitalCell.xib; sourceTree = "<group>"; };
+		9C57A5132487C155008C362D /* EnrollingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollingViewController.swift; sourceTree = "<group>"; };
+		9C57A5152487C1F3008C362D /* TicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewController.swift; sourceTree = "<group>"; };
+		9C64CBF524882EE500D02B92 /* Reception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reception.swift; sourceTree = "<group>"; };
+		9C64CBF724883F1B00D02B92 /* TicketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCell.swift; sourceTree = "<group>"; };
+		9C64CBF824883F1B00D02B92 /* TicketCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C5569382486AA77007C360C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C5569732486AADA007C360C /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C5569512486AA7E007C360C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C55695C2486AA7E007C360C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C5569322486AA77007C360C = {
+			isa = PBXGroup;
+			children = (
+				9C57A50624879DD8008C362D /* Hospital.db */,
+				9C55693D2486AA77007C360C /* TPLab10 */,
+				9C5569572486AA7E007C360C /* TPLab10Tests */,
+				9C5569622486AA7E007C360C /* TPLab10UITests */,
+				9C55693C2486AA77007C360C /* Products */,
+				9C5569712486AADA007C360C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9C55693C2486AA77007C360C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C55693B2486AA77007C360C /* TPLab10.app */,
+				9C5569542486AA7E007C360C /* TPLab10Tests.xctest */,
+				9C55695F2486AA7E007C360C /* TPLab10UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C55693D2486AA77007C360C /* TPLab10 */ = {
+			isa = PBXGroup;
+			children = (
+				9C55F87B248972440049308F /* View */,
+				9C55F87A2489720C0049308F /* Controller */,
+				9C55697A2486ACE6007C360C /* Model */,
+				9C5569762486AB14007C360C /* DataBase */,
+				9C55693E2486AA77007C360C /* AppDelegate.swift */,
+				9C5569402486AA77007C360C /* SceneDelegate.swift */,
+				9C55694A2486AA7E007C360C /* Assets.xcassets */,
+				9C55694F2486AA7E007C360C /* Info.plist */,
+				9C5569472486AA77007C360C /* TPLab10.xcdatamodeld */,
+			);
+			path = TPLab10;
+			sourceTree = "<group>";
+		};
+		9C5569572486AA7E007C360C /* TPLab10Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9C5569582486AA7E007C360C /* TPLab10Tests.swift */,
+				9C55695A2486AA7E007C360C /* Info.plist */,
+				9C55F870248931EA0049308F /* HospitalTests.swift */,
+				9C55F872248936780049308F /* ReceptionTests.swift */,
+				9C55F874248938280049308F /* PatientTests.swift */,
+				9C55F8762489397A0049308F /* DBTests.swift */,
+				9C55F87824893C4F0049308F /* HelperTests.swift */,
+			);
+			path = TPLab10Tests;
+			sourceTree = "<group>";
+		};
+		9C5569622486AA7E007C360C /* TPLab10UITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C5569632486AA7E007C360C /* TPLab10UITests.swift */,
+				9C5569652486AA7E007C360C /* Info.plist */,
+			);
+			path = TPLab10UITests;
+			sourceTree = "<group>";
+		};
+		9C5569712486AADA007C360C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C5569722486AADA007C360C /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C5569762486AB14007C360C /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				9C57A50824879DE1008C362D /* Hospital.db */,
+				9C5569782486AB67007C360C /* DataBaseHandler.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		9C55697A2486ACE6007C360C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C55697B2486AD03007C360C /* Hospital.swift */,
+				9C57A500248786BC008C362D /* Patient.swift */,
+				9C5782F42487DF8F00AADAE9 /* Helper.swift */,
+				9C64CBF524882EE500D02B92 /* Reception.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C55F87A2489720C0049308F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C57A5092487A5D9008C362D /* PolyclinicCell.swift */,
+				9C57A50D2487A7A1008C362D /* Polyclinic.swift */,
+				9C57A50F2487B225008C362D /* HospitalCell.swift */,
+				9C64CBF724883F1B00D02B92 /* TicketCell.swift */,
+				9C5585F62488C22F00CC535E /* TicketProfileViewController.swift */,
+				9C57A5132487C155008C362D /* EnrollingViewController.swift */,
+				9C57A5152487C1F3008C362D /* TicketsViewController.swift */,
+				9C55697D2486CFE8007C360C /* AccountViewController.swift */,
+				9C5569812486D1D2007C360C /* PolyclinicsViewController.swift */,
+				9C5569832486D2D5007C360C /* PolyProfileViewController.swift */,
+				9C5569852486D476007C360C /* DepartmentsViewController.swift */,
+				9C5569872486D53A007C360C /* RegistrationViewController.swift */,
+				9C55698F2486E8C7007C360C /* HospitalViewController3.swift */,
+				9C5569422486AA77007C360C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C55F87B248972440049308F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C55694C2486AA7E007C360C /* LaunchScreen.storyboard */,
+				9C5569442486AA77007C360C /* Main.storyboard */,
+				9C57A5102487B225008C362D /* HospitalCell.xib */,
+				9C64CBF824883F1B00D02B92 /* TicketCell.xib */,
+				9C57A50A2487A5D9008C362D /* PolyclinicCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C55693A2486AA77007C360C /* TPLab10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C5569682486AA7E007C360C /* Build configuration list for PBXNativeTarget "TPLab10" */;
+			buildPhases = (
+				9C5569372486AA77007C360C /* Sources */,
+				9C5569382486AA77007C360C /* Frameworks */,
+				9C5569392486AA77007C360C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPLab10;
+			productName = TPLab10;
+			productReference = 9C55693B2486AA77007C360C /* TPLab10.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C5569532486AA7E007C360C /* TPLab10Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C55696B2486AA7E007C360C /* Build configuration list for PBXNativeTarget "TPLab10Tests" */;
+			buildPhases = (
+				9C5569502486AA7E007C360C /* Sources */,
+				9C5569512486AA7E007C360C /* Frameworks */,
+				9C5569522486AA7E007C360C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C5569562486AA7E007C360C /* PBXTargetDependency */,
+			);
+			name = TPLab10Tests;
+			productName = TPLab10Tests;
+			productReference = 9C5569542486AA7E007C360C /* TPLab10Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C55695E2486AA7E007C360C /* TPLab10UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C55696E2486AA7E007C360C /* Build configuration list for PBXNativeTarget "TPLab10UITests" */;
+			buildPhases = (
+				9C55695B2486AA7E007C360C /* Sources */,
+				9C55695C2486AA7E007C360C /* Frameworks */,
+				9C55695D2486AA7E007C360C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C5569612486AA7E007C360C /* PBXTargetDependency */,
+			);
+			name = TPLab10UITests;
+			productName = TPLab10UITests;
+			productReference = 9C55695F2486AA7E007C360C /* TPLab10UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C5569332486AA77007C360C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Ilya Huzei";
+				TargetAttributes = {
+					9C55693A2486AA77007C360C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					9C5569532486AA7E007C360C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 9C55693A2486AA77007C360C;
+					};
+					9C55695E2486AA7E007C360C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 9C55693A2486AA77007C360C;
+					};
+				};
+			};
+			buildConfigurationList = 9C5569362486AA77007C360C /* Build configuration list for PBXProject "TPLab10" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C5569322486AA77007C360C;
+			productRefGroup = 9C55693C2486AA77007C360C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C55693A2486AA77007C360C /* TPLab10 */,
+				9C5569532486AA7E007C360C /* TPLab10Tests */,
+				9C55695E2486AA7E007C360C /* TPLab10UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C5569392486AA77007C360C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C57A50724879DD8008C362D /* Hospital.db in Resources */,
+				9C57A50C2487A5D9008C362D /* PolyclinicCell.xib in Resources */,
+				9C55694E2486AA7E007C360C /* LaunchScreen.storyboard in Resources */,
+				9C64CBFA24883F1B00D02B92 /* TicketCell.xib in Resources */,
+				9C55694B2486AA7E007C360C /* Assets.xcassets in Resources */,
+				9C5569462486AA77007C360C /* Main.storyboard in Resources */,
+				9C57A5122487B225008C362D /* HospitalCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C5569522486AA7E007C360C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C55695D2486AA7E007C360C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C5569372486AA77007C360C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C5569842486D2D5007C360C /* PolyProfileViewController.swift in Sources */,
+				9C57A5112487B225008C362D /* HospitalCell.swift in Sources */,
+				9C5569492486AA77007C360C /* TPLab10.xcdatamodeld in Sources */,
+				9C64CBF924883F1B00D02B92 /* TicketCell.swift in Sources */,
+				9C5569432486AA77007C360C /* ViewController.swift in Sources */,
+				9C57A501248786BC008C362D /* Patient.swift in Sources */,
+				9C5569862486D476007C360C /* DepartmentsViewController.swift in Sources */,
+				9C55697E2486CFE8007C360C /* AccountViewController.swift in Sources */,
+				9C64CBF624882EE500D02B92 /* Reception.swift in Sources */,
+				9C5569822486D1D2007C360C /* PolyclinicsViewController.swift in Sources */,
+				9C5782F52487DF8F00AADAE9 /* Helper.swift in Sources */,
+				9C57A5142487C155008C362D /* EnrollingViewController.swift in Sources */,
+				9C5585F72488C22F00CC535E /* TicketProfileViewController.swift in Sources */,
+				9C57A50B2487A5D9008C362D /* PolyclinicCell.swift in Sources */,
+				9C57A5162487C1F3008C362D /* TicketsViewController.swift in Sources */,
+				9C5569902486E8C7007C360C /* HospitalViewController3.swift in Sources */,
+				9C57A50E2487A7A1008C362D /* Polyclinic.swift in Sources */,
+				9C5569882486D53A007C360C /* RegistrationViewController.swift in Sources */,
+				9C5569792486AB67007C360C /* DataBaseHandler.swift in Sources */,
+				9C55693F2486AA77007C360C /* AppDelegate.swift in Sources */,
+				9C5569412486AA77007C360C /* SceneDelegate.swift in Sources */,
+				9C55697C2486AD03007C360C /* Hospital.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C5569502486AA7E007C360C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C55F8772489397A0049308F /* DBTests.swift in Sources */,
+				9C55F87924893C4F0049308F /* HelperTests.swift in Sources */,
+				9C5569592486AA7E007C360C /* TPLab10Tests.swift in Sources */,
+				9C55F875248938280049308F /* PatientTests.swift in Sources */,
+				9C55F871248931EA0049308F /* HospitalTests.swift in Sources */,
+				9C55F873248936780049308F /* ReceptionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C55695B2486AA7E007C360C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C5569642486AA7E007C360C /* TPLab10UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C5569562486AA7E007C360C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C55693A2486AA77007C360C /* TPLab10 */;
+			targetProxy = 9C5569552486AA7E007C360C /* PBXContainerItemProxy */;
+		};
+		9C5569612486AA7E007C360C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C55693A2486AA77007C360C /* TPLab10 */;
+			targetProxy = 9C5569602486AA7E007C360C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C5569442486AA77007C360C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C5569452486AA77007C360C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C55694C2486AA7E007C360C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C55694D2486AA7E007C360C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C5569662486AA7E007C360C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C5569672486AA7E007C360C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C5569692486AA7E007C360C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82RQ7Q72V5;
+				INFOPLIST_FILE = TPLab10/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TPLab10";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C55696A2486AA7E007C360C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82RQ7Q72V5;
+				INFOPLIST_FILE = TPLab10/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TPLab10";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9C55696C2486AA7E007C360C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82RQ7Q72V5;
+				INFOPLIST_FILE = TPLab10Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TPLab10Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TPLab10.app/TPLab10";
+			};
+			name = Debug;
+		};
+		9C55696D2486AA7E007C360C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82RQ7Q72V5;
+				INFOPLIST_FILE = TPLab10Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TPLab10Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TPLab10.app/TPLab10";
+			};
+			name = Release;
+		};
+		9C55696F2486AA7E007C360C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82RQ7Q72V5;
+				INFOPLIST_FILE = TPLab10UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TPLab10UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TPLab10;
+			};
+			name = Debug;
+		};
+		9C5569702486AA7E007C360C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82RQ7Q72V5;
+				INFOPLIST_FILE = TPLab10UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TPLab10UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TPLab10;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C5569362486AA77007C360C /* Build configuration list for PBXProject "TPLab10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C5569662486AA7E007C360C /* Debug */,
+				9C5569672486AA7E007C360C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C5569682486AA7E007C360C /* Build configuration list for PBXNativeTarget "TPLab10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C5569692486AA7E007C360C /* Debug */,
+				9C55696A2486AA7E007C360C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C55696B2486AA7E007C360C /* Build configuration list for PBXNativeTarget "TPLab10Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C55696C2486AA7E007C360C /* Debug */,
+				9C55696D2486AA7E007C360C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C55696E2486AA7E007C360C /* Build configuration list for PBXNativeTarget "TPLab10UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C55696F2486AA7E007C360C /* Debug */,
+				9C5569702486AA7E007C360C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9C5569472486AA77007C360C /* TPLab10.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C5569482486AA77007C360C /* TPLab10.xcdatamodel */,
+			);
+			currentVersion = 9C5569482486AA77007C360C /* TPLab10.xcdatamodel */;
+			path = TPLab10.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9C5569332486AA77007C360C /* Project object */;
+}
