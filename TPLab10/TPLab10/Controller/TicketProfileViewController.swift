@@ -46,7 +46,19 @@ class TicketProfileViewController: UIViewController {
             }
                           
         }))
-        self.present(alert, animated: true, completion: nil)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { action in
+                        switch action.style{
+                        case .default:
+                            print("default")
+                        case .cancel:
+                            print("cancel")
+                        case .destructive:
+                            print("destructive")
+                            
+                }
+                              
+            }))
+            self.present(alert, animated: true, completion: nil)
                       
         }
        

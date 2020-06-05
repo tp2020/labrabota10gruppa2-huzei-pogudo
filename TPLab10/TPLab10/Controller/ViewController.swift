@@ -21,11 +21,13 @@ class ViewController: UIViewController {
      override func viewDidAppear(_ animated: Bool) {
         if(UserDefaults.standard.string(forKey: "login") != nil && UserDefaults.standard.string(forKey: "password") != nil){
             let pat:Patient? = ViewController.dbConnector.checkPatient(login: UserDefaults.standard.string(forKey: "login")!, password: UserDefaults.standard.string(forKey: "password")!)
+            if(pat != nil){
             let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let grettViewC = storyBoard.instantiateViewController(withIdentifier: "AccountViewController") as! AccountViewController
                 grettViewC.modalPresentationStyle = .fullScreen
                 AccountViewController.patient = pat!
                 self.present(grettViewC, animated: true, completion: nil)
+            }
             
         }
        }

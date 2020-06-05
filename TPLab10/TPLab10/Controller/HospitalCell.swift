@@ -20,5 +20,7 @@ class HospitalCell: UICollectionViewCell {
     public func configure(name:String, img:UIImage){
         nameText.text = name
         self.img.image = img
+        self.backgroundView = UIImageView(image: UIImage(named:"BackCell"))
+        
     }
 }

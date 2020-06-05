@@ -52,9 +52,7 @@ class AccountViewController: UIViewController {
         
     }
     
-     @IBAction func exitTapped(_ sender: Any) {
-        exit(0)
-     }
+    
    /*  // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

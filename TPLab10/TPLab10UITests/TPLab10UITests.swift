@@ -27,7 +27,12 @@ class TPLab10UITests: XCTestCase {
     
     func testLoginSuccess() {
        let app = XCUIApplication()
-       let userNameTextfield =  app.textFields["login"]
+        var userNameTextfield =  app.textFields["login"]
+        if(!userNameTextfield.exists){
+            app.buttons["Back"].tap()
+        }
+        userNameTextfield =  app.textFields["login"]
+        
         XCTAssert(userNameTextfield.exists)
         userNameTextfield.tap()
         userNameTextfield.typeText("iliuha1907")
@@ -41,6 +46,7 @@ class TPLab10UITests: XCTestCase {
       
         XCTAssert(app.buttons["Hospitals"].exists)
         app.buttons["Back"].tap()
+         // app.buttons["Back"].tap()
         
     }
     
@@ -48,7 +54,12 @@ class TPLab10UITests: XCTestCase {
         
        XCUIApplication().launch()
        let app = XCUIApplication()
-       let userNameTextfield =  app.textFields["login"]
+       var userNameTextfield =  app.textFields["login"]
+       if(!userNameTextfield.exists){
+            app.buttons["Back"].tap()
+       }
+       userNameTextfield =  app.textFields["login"]
+        
        XCTAssert(userNameTextfield.exists)
        userNameTextfield.tap()
        userNameTextfield.typeText("iliuha")
@@ -63,8 +74,14 @@ class TPLab10UITests: XCTestCase {
     }
     
     func testPolyclinics(){
+       
         let app = XCUIApplication()
-        let userNameTextfield =  app.textFields["login"]
+        var userNameTextfield =  app.textFields["login"]
+         if(!userNameTextfield.exists){
+            app.buttons["Back"].tap()
+            
+        }
+        userNameTextfield = app.textFields["login"]
         XCTAssert(userNameTextfield.exists)
         userNameTextfield.tap()
         userNameTextfield.typeText("iliuha1907")
@@ -94,8 +111,12 @@ class TPLab10UITests: XCTestCase {
     
     func testHospital(){
         
-       let app = XCUIApplication()
-        let userNameTextfield =  app.textFields["login"]
+        let app = XCUIApplication()
+        var userNameTextfield =  app.textFields["login"]
+        if(!userNameTextfield.exists){
+            app.buttons["Back"].tap()
+        }
+        userNameTextfield =  app.textFields["login"]
         XCTAssert(userNameTextfield.exists)
         userNameTextfield.tap()
         userNameTextfield.typeText("iliuha1907")
@@ -113,7 +134,7 @@ class TPLab10UITests: XCTestCase {
         let backButton = app.buttons["Back"]
         backButton.tap()
         backButton.tap()
-                
+        backButton.tap()
     }
 
    
