@@ -21,6 +21,10 @@ class AccountViewController: UIViewController {
         imgUser.image = UIImage(named: "User")
     }
     
+    @IBAction func exitTapped(_ sender: Any) {
+        exit(0)
+    }
+    
     @IBAction func backTapped(_ sender: Any) {
         UserDefaults.standard.set(nil, forKey: "login")
         UserDefaults.standard.set(nil, forKey: "password")

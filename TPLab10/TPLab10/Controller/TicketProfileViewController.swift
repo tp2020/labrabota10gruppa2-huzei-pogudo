@@ -11,6 +11,7 @@ import UIKit
 class TicketProfileViewController: UIViewController {
     
     var ticket:Reception!
+    var polyclinic:Hospital!
     @IBOutlet var labelPolyc: UILabel!
     @IBOutlet var labelDate: UILabel!
     
@@ -19,7 +20,7 @@ class TicketProfileViewController: UIViewController {
     @IBOutlet var img: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelPolyc.text = String(ticket.getPolyclinicId())
+        labelPolyc.text = polyclinic.getName()
         labelDate.text = ticket.getDate()
         labelDoc.text = ticket.getDoctor()
         img.image = UIImage(named:"Ticket")

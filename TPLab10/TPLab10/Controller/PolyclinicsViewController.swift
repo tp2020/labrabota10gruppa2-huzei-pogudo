@@ -17,28 +17,22 @@ class PolyclinicsViewController: UIViewController,CLLocationManagerDelegate{
     @IBOutlet var hospitalCollection: UICollectionView!
     {
       didSet {
-        // 1
         hospitalCollection.delegate = self
         hospitalCollection.dataSource = self
-        // 2
         hospitalCollection.register(UINib.init(nibName: "PolyclinicCell", bundle: nil), forCellWithReuseIdentifier: "PolyclinicCell")
         hospitalCollection.backgroundColor = .clear
       }
     }
     
      override func viewDidAppear(_ animated: Bool){
-          
-          // flag = false
        }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.locationManager.requestAlwaysAuthorization()
 
-        // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
-       // if CLLocationManager.locationServicesEnabled(){
-       locationManager.delegate = self
+        locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.startUpdatingLocation()
          guard let locValue: CLLocationCoordinate2D = locationManager.location?.coordinate else { return }
@@ -50,29 +44,10 @@ class PolyclinicsViewController: UIViewController,CLLocationManagerDelegate{
             
     }
         
-       /* func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-            guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-            print("locations = \(locValue.latitude) \(locValue.longitude)")
-        }*/
-       
-        
-        // Do any additional setup after loading the view.
-    
-    
-
-    
      @IBAction func backTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
      }
-     // MARK: - Navigation
-/*
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
 }
 
 extension PolyclinicsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -92,17 +67,7 @@ extension PolyclinicsViewController: UICollectionViewDelegate, UICollectionViewD
   
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PolyclinicCell", for: indexPath) as! PolyclinicCell
-        let hosp:Hospital = hospitalList[indexPath.row]
-      //  if(hosp.getIsAdult()){
-            
-            print("Hell \(indexPath.row)")
-            cell.configure(name: hospitalList[indexPath.row].getName(), img: hospitalList[indexPath.row].getImg(),flag: hospitalList[indexPath.row].getIsAdult())
-            
-       /* }
-        else{
-            cell.configure(name: hospitalList[indexPath.row].getName(), img: hospitalList[indexPath.row].getImg(),flag: false)
-            
-        }*/
+    cell.configure(name: hospitalList[indexPath.row].getName(), img: hospitalList[indexPath.row].getImg(),flag: hospitalList[indexPath.row].getIsAdult())
     return cell
   }
 }

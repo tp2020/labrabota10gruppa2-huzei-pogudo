@@ -54,13 +54,14 @@ extension TicketsViewController: UICollectionViewDelegate, UICollectionViewDataS
         let grettViewC = storyBoard.instantiateViewController(withIdentifier: "TicketProfileViewController") as! TicketProfileViewController
         grettViewC.modalPresentationStyle = .fullScreen
         grettViewC.ticket = tickets[indexPath.row]
+        grettViewC.polyclinic = polyclinic
         self.present(grettViewC, animated: true, completion: nil)
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TicketCell", for: indexPath) as! TicketCell
-        cell.configure(date: tickets[indexPath.row].getDate(), polyclinic: String(tickets[indexPath.row].getPolyclinicId()), doctor: tickets[indexPath.row].getDoctor())
+        cell.configure(date: tickets[indexPath.row].getDate(), polyclinic: polyclinic.getName(), doctor: tickets[indexPath.row].getDoctor())
      
     return cell
   }
